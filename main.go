@@ -49,7 +49,7 @@ func main() {
 				bot.Send(tgbotapi.NewMessage(update.Message.Chat.ID, "Error processing image"))
 				continue
 			}
-			msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Scanned text from image:\n"+resText)
+			msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Scanned text from image:"+resText)
 			bot.Send(msg)
 		}
 	}
